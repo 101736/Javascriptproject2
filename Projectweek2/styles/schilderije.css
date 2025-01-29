@@ -1,0 +1,96 @@
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    font-size: 20px;
+    position: sticky;
+    top: 0;
+    right: 0;
+    padding: 10px 30px;
+    z-index: 1000;
+    background-color: #e42054;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown {
+    position: relative;
+}
+
+body {
+    font-family:"gabriella" ;
+    background-color: #e42054;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #e42054;
+    border: 1px solid #b01841;
+    padding: 10px 0;
+    width: max-content;
+    font-size: 18px;
+    z-index: 100;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    display: block;
+}
+
+.title {
+    margin-top: 20%;
+    margin-left: 5%;
+    font-size: 70px;
+    position: fixed;
+   
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-rows: repeat(5, auto); /* 5 rows */
+    gap: 20px;
+    padding: 20px;
+    max-width: 70%; /* Reduce container width */
+    margin-left: 30%; /* Offset the container to the right side */
+
+    
+}
+.menu a:hover {
+    background-color: #ddd;
+}
+
+.dropdown-menu a:hover {
+    background-color: #ddd;
+}
+
+.image-box {
+    position: relative;
+    height: auto;
+    width: 100%; /* Ensures image boxes take full width of the grid cell */
+}
+
+.image-box img {
+    width: 100%; /* Make image width fill its container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 250px; /* Set a max height for the images */
+    object-fit: contain; /* Ensure the image fits within the container without cropping */
+}
+
+
+@font-face {
+    font-family:"gabriella" ;
+    src: url(/Projectweek/font/Gabriela-Regular.ttf);
+  }
+  
